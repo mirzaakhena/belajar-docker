@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  apporder:
+    container_name: apporder
+    build: .
+    entrypoint: "./belajardocker order"
+    ports:
+      - "8080:8080"
+
+  apppayment:
+    container_name: apppayment
+    build: .
+    entrypoint: "./belajardocker payment"
+    ports:
+      - "8081:8081"
+      - "1234:1234"
