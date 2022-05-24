@@ -39,4 +39,3 @@ COPY --from=builder /etc/passwd /etc/passwd
 WORKDIR /app
 COPY --from=builder /go/src/belajardocker/belajardocker /app
 COPY --from=builder /go/src/belajardocker/config.json /app
-COPY --from=builder /go/src/belajardocker/run.sh /app
